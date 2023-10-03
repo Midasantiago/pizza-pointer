@@ -4,23 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css"/>
     <title>Pizza Pointer</title>
 </head>
 
-<body>
-    <section id="sidebar">
-        <h2>Pizza Pointer</h2>
-        <form>
-            <label for="search">Search</label>
-            <input type="search" id="search" name="search">
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+<body class="bg-gray-600 text-white">
+    <div class="flex p-10">
+        <section id="sidebar" class="flex-1">
+            <h2 class="text-orange-400 font-bold mb-4">Pizza Pointer 🍕</h2>
+            <form class="mb-4">
+                <label for="search">Search</label>
+                <input type="search" id="search" name="search" class="block py-2 px-3 border rounded">
+                <button type="submit" class="mt-2 bg-amber-300 hover:bg-amber-500 text-white font-bold py-2 px-4 rounded">Submit</button>
+            </form>
+        </section>
 
-    <section id="results">
-
-    </section>
+        <section id="results" class="flex-1">
+            <div class="mb-4">
+                <img src="">
+                <h2 class="text-xl font-bold">Location 1</h2>
+                <p>Distance</p>
+            </div>
+            <div class="mb-4">
+                <img src="">
+                <h2 class="text-xl font-bold">Location 2</h2>
+                <p>Distance</p>
+            </div>
+        </section>
+    </div>
 </body>
 
 </html>
