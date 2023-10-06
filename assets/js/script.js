@@ -1,4 +1,4 @@
-$(function () {
+$(function () {;
     var searchformEl = $('#search-form');
     var searchInputEl = $('#search');
 
