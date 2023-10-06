@@ -6,12 +6,6 @@ h1{
 .main {display: flex;
 
 }
-#map {
-    height: 720px;
-    width: 50%;
-    background-color: blue;
-
-}
 #info {
     height: fit-content;
     width: 50%;
