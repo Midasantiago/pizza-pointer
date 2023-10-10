@@ -17,7 +17,15 @@ h1{
 #info {
     height: fit-content;
     width: 50%;
-    background-color: rgb(75 85 99);
     color: white;
+}
 
+.history-item {
+    display: block;
+    width: 400px;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%
 }

@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Pizza Pointer</title>
 </head>
-<body>
-   
+
+<body class="bg-gray-600">
+
     <div class="main">
 
-      <div id="map" style="width: 100%; height: 720px ;"></div>
-        <section id="info">
-        <h2 id="name">Name</h2>
-
-        <div id="rating">
-            <p>This will be the rating</p>
-        </div>
-        <p id="review">
-            This will be the review
-        </p>
-        <div id="image">
-            <p>This will be the location photo</p>
-        </div>
+        <div id="map" style="width: 100%; height: 720px ;"></div>
+        <section id="info" class="p-3 mt-20 bg-yellow-500">
+            <h2 id="name" class="text-3xl mb-4">Name</h2>
+            <p id="address" class="mb-3">This will be the address</p>
+            <p id="rating" class="mb-3">This will be the rating</p>
         </section>
-     </div>
-     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0A1-YT8eDHRQKi26LYhfiTl2p1SBEHwA"></script>
-     <script src="assets/js/info.js"></script>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYp493ZRVbOt3mwlTgedNOrOOfmH55MlQ&libraries=places&callback=initMap">
+        </script>
+    <script src="assets/js/info.js"></script>
+
+    <footer class="bg-yellow-500 mt-10 rounded text-center">
+        <p>CopyRight Team 5</p>
+    </footer>
 </body>
+
 </html>

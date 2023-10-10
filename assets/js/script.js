@@ -24,12 +24,17 @@ $(function () {
         }
     };
 
+    var autocomplete;
+    autocomplete = new google.maps.places.Autocomplete(document.getElementById('search'), {
+        types: ['geocode']
+    });
+
     var getResultsLatLon = function (lat, lon) {
-        window.location.href = './results.html?lat=' + lat + 'lon=' + lon
+        window.location.href = './results.html?city=&lat=' + lat + '&lon=' + lon
     }
 
     var getResultsCity = function (city) {
-        window.location.href = './results.html?city=' + city
+        window.location.href = './results.html?city=' + city + '&lat=&lon='
     }
 
     searchformEl.on('submit', submitHandler);
